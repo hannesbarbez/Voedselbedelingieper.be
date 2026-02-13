@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missie - Voedselbedeling vzw Op 't Spoor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img src="logo.png" alt="Op 't Spoor Logo" class="logo">
+            </a>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <a href="index.html">Over ons</a>
+                <a href="missie.html">Missie</a>
+                <a href="openingsuren.html">Openingsuren</a>
+                <a href="contact.html">Contact</a>
+                <a href="europees-sociaal-fonds-plus.html">Europees Sociaal Fonds Plus</a>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('nav').classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('.hamburger').classList.remove('active');
+                document.querySelector('nav').classList.remove('active');
+            });
+        });
+    </script>
+
+    <main>
+        <div class="container">
+            <h1>Missie</h1>
+
+            <section class="missie-content">
+                <div class="missie-text">
+                    <h2>Over ons doel</h2>
+                    <ul>
+                        <li>Genieten van gezelligheid, lekker eten en drinken, is voor een aantal mensen in onze omgeving niet zo vanzelfsprekend.</li>
+                        <li>Op een gegeven moment kun je zo erg in de financiële problemen komen, dat je zelfs geen geld meer hebt om dagelijks eten voor jezelf en/of je gezin te kopen. Om tegemoet te komen aan de nood van deze (verborgen) armoede is de voedselbedeling.</li>
+                        <li>Aan de ene kant worden mensen in armoede geholpen: gezinnen en alleenstaanden met of zonder kinderen, mensen met een beperking en vluchtelingen.</li>
+                        <li>Aan de andere kant gaat deze vorm van voedselhulp de verspilling tegen. Voedsel wordt niet langer weggegooid door voedingsindustrie, distributie, grote en kleine voedingswinkels maar wordt geschonken aan de voedselbedeling.</li>
+                    </ul>
+                    
+                    <p>Wij zijn aangesloten bij de Belgische Federatie van Voedselbanken <a href="http://www.foodbanks.be/nl" target="_blank">www.foodbanks.be/nl</a>.</p>
+                </div>
+                <div class="missie-logo">
+                    <img src="voedselbanken-logo.png" alt="Voedselbanken" class="foodbank-logo">
+                    <p class="logo-caption">Voedselbanken</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="privacyverklaring.html">Privacyverklaring</a>
+            </div>
+            <div class="copyright">
+                © 2026 Voedselbedeling Op 't Spoor
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

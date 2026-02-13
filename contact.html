@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Voedselbedeling vzw Op 't Spoor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img src="logo.png" alt="Op 't Spoor Logo" class="logo">
+            </a>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <a href="index.html">Over ons</a>
+                <a href="missie.html">Missie</a>
+                <a href="openingsuren.html">Openingsuren</a>
+                <a href="contact.html">Contact</a>
+                <a href="europees-sociaal-fonds-plus.html">Europees Sociaal Fonds Plus</a>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('nav').classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('.hamburger').classList.remove('active');
+                document.querySelector('nav').classList.remove('active');
+            });
+        });
+    </script>
+
+    <main>
+        <div class="container">
+            <h1>Contact</h1>
+
+            <section class="contact-info">
+                <h2>Adres</h2>
+                <p>Op 't Spoor</p>
+                <p>Grachtstraat 17A</p>
+                <p>8900 IEPER</p>
+            </section>
+
+            <section class="contact-info">
+                <h2>Telefoon</h2>
+                <p>057 21 44 24 (op woensdagvoormiddag en vrijdag)</p>
+            </section>
+
+            <section class="contact-info">
+                <h2>E-mail</h2>
+                <p><a href="mailto:optspoor@gmail.com" class="email-link">optspoor@gmail.com</a></p>
+            </section>
+
+            <section class="contact-info">
+                <h2>Verantwoordelijke</h2>
+                <p>Katrien Durnez</p>
+            </section>
+
+            <section class="contact-info">
+                <h2>Wie ons een steuntje in de rug wil geven</h2>
+                <p>Rekeningnummer: BE 13 0688 9758 10 39</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="privacyverklaring.html">Privacyverklaring</a>
+            </div>
+            <div class="copyright">
+                © 2026 Voedselbedeling Op 't Spoor
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
