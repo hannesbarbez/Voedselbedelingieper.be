@@ -22,12 +22,12 @@ body {
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+    background: linear-gradient(135deg, #0b3954 0%, #1a5a87 100%);
     padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 6px 18px rgba(11, 95, 89, 0.2);
+    box-shadow: 0 6px 18px rgba(11, 57, 84, 0.2);
     backdrop-filter: blur(8px);
 }
 
@@ -109,7 +109,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(180deg, #14b8a6 0%, #2dd4bf 60%, #99f6e4 100%);
+    background: linear-gradient(180deg, #1a5a87 0%, #2b7bb9 60%, #a8d5f2 100%);
     color: white;
     padding: 80px 20px;
     text-align: left;
@@ -216,7 +216,7 @@ nav a:hover {
 
 /* Main Content */
 main {
-    background: linear-gradient(to bottom, #f0fdfa 0%, #e0f9f6 100%);
+    background: linear-gradient(to bottom, #f0f7fc 0%, #e3f2fb 100%);
     padding: 30px 20px 50px;
     flex: 1;
 }
@@ -227,11 +227,11 @@ main {
     background-color: white;
     padding: 50px;
     border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(13, 148, 136, 0.08), 0 2px 8px rgba(0,0,0,0.04);
+    box-shadow: 0 10px 40px rgba(11, 57, 84, 0.08), 0 2px 8px rgba(0,0,0,0.04);
 }
 
 h1 {
-    color: #0b5f59;
+    color: #082d42;
     font-size: 2.5em;
     margin-bottom: 20px;
     font-weight: 700;
@@ -240,7 +240,7 @@ h1 {
 }
 
 h2, h3 {
-    color: #0f766e;
+    color: #0e4a6b;
     margin-top: 30px;
     margin-bottom: 15px;
     font-weight: 600;
@@ -273,31 +273,31 @@ li {
 }
 
 a {
-    color: #0d9488;
+    color: #0b3954;
     transition: color 0.2s ease;
 }
 
 a:hover {
-    color: #0b5f59;
+    color: #082d42;
 }
 
 /* Contact Info */
 .contact-info {
     margin-bottom: 32px;
     padding: 24px;
-    background: linear-gradient(135deg, #f0fdfa 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #f0f7fc 0%, #ffffff 100%);
     border-radius: 16px;
-    border-left: 4px solid #0d9488;
+    border-left: 4px solid #0b3954;
     transition: all 0.3s ease;
 }
 
 .contact-info:hover {
     transform: translateX(4px);
-    box-shadow: 0 4px 20px rgba(13, 148, 136, 0.1);
+    box-shadow: 0 4px 20px rgba(11, 57, 84, 0.1);
 }
 
 .contact-info h2 {
-    color: #0f766e;
+    color: #0e4a6b;
     margin-bottom: 12px;
     margin-top: 0;
 }
@@ -307,7 +307,7 @@ a:hover {
 }
 
 .email-link {
-    color: #0d9488;
+    color: #0b3954;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.2s ease;
@@ -317,17 +317,17 @@ a:hover {
 }
 
 .email-link:hover {
-    color: #0b5f59;
-    background-color: rgba(13, 148, 136, 0.08);
+    color: #082d42;
+    background-color: rgba(11, 57, 84, 0.08);
 }
 
 /* Footer */
 footer {
-    background: linear-gradient(to bottom, #f0fdfa 0%, #ffffff 100%);
+    background: linear-gradient(to bottom, #f0f7fc 0%, #ffffff 100%);
     padding: 40px 20px;
     text-align: center;
-    border-top: 2px solid #5eead4;
-    box-shadow: 0 -4px 20px rgba(13, 148, 136, 0.05);
+    border-top: 2px solid #7ec4e8;
+    box-shadow: 0 -4px 20px rgba(11, 57, 84, 0.05);
 }
 
 .footer-container {
@@ -340,7 +340,7 @@ footer {
 }
 
 .footer-links a {
-    color: #0d9488;
+    color: #0b3954;
     text-decoration: none;
     margin-right: 20px;
     font-weight: 500;
@@ -350,8 +350,8 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #0b5f59;
-    background-color: rgba(13, 148, 136, 0.1);
+    color: #082d42;
+    background-color: rgba(11, 57, 84, 0.1);
 }
 
 .copyright {
@@ -435,7 +435,7 @@ footer {
         width: 70%;
         max-width: 300px;
         height: 100vh;
-        background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+        background: linear-gradient(135deg, #0b3954 0%, #1a5a87 100%);
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
@@ -443,7 +443,7 @@ footer {
         gap: 0;
         margin: 0;
         transition: right 0.3s ease;
-        box-shadow: -4px 0 24px rgba(13, 148, 136, 0.2);
+        box-shadow: -4px 0 24px rgba(11, 57, 84, 0.2);
         z-index: 100;
         backdrop-filter: blur(10px);
     }
